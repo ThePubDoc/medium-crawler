@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/showBlog.css"> -->
+    <link rel="stylesheet" href="../css/showBlog.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <h1>Medium Crawler</h1>
+        </div>
+    </nav>
+    
+    <div class="blog">
+        <%- post[0].content %>
+    </div>
+    
+    <div class="tags-hero">
+        <h2>Tags</h2>
+
+        <div class="tags">
+            <% for(let i=0;i < post[0].tags.length;i++) { %>
+                <button id="tag">
+                    <%= post[0].tags[i] %>
+                </button>
+            <% } %>
+        </div>
+    </div>
+    
+    
+
+    <div class="responses-hero">
+        <h2>Responses</h2>
+        <% for(let i=0;i < post[0].responses.length;i++) { %>
+           
+            <div class="response">
+                <h5><%= post[0].responses[i].name %></h5>
+                <p><%= post[0].responses[i].text %></p>
+            </div>
+
+        <% } %>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+}
+
+nav h1 {
+    font-size: xx-large;
+}
+
+nav input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+nav button {
+    border: none;
+    background-color: white;
+    margin: 0 1rem;
+}
+
+nav .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 5rem;
+}
+
+.history button {
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+.crawler-hero {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 2rem;
+    margin: 5rem 10rem;
+}
+
+.crawler-hero .related-tags-hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.crawler-hero .related-tags-hero h2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    margin: 1rem 0;
+}
+
+.crawler-hero .related-tags-hero .related-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.crawler-hero .related-tags-hero .related-tags button {
+    background-color: white;
+    padding: .2rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    margin: .2rem .3rem;
+}
+
+.crawler-hero .blogs .crawled-blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crawler-hero .blogs .crawled-blogs .blog {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.crawler-hero .blogs .crawled-blogs .blog img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.crawler-hero .blogs .crawled-blogs .blog p {
+    font-size: medium;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.crawler-hero .blogs .crawled-blogs .blog a {
+    margin: .5rem 0;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+.show-more {
+    width: max-content;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: white;
+    padding: .5rem;
+    margin: 1rem 0;
+}
